@@ -43,34 +43,75 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
 </script>
-<style> 
-			body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-	}
+<style>
+		body {
+			margin: 0;
+			font-family: 'Playfair Display', serif;
+		}
 
-	.topnav {
-		overflow: hidden;
-		background-color: #ffe19c;
-	}
+		/* .topnav {
+			overflow: hidden;
+			background-color: #ffe19c;
+		}
 
-	.topnav a {
-		float: left;
-		color: black;
-		text-align: center;
-		padding: 14px 16px;
-		font-size: 18px;
-	}
+		.topnav a {
+			float: left;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			font-size: 18px;
+		}
 
-	.topnav a:hover {
-  background-color: #ffe19c;
-  color: black;
-}
+		.topnav a:hover {
+			background-color: white;
+			color: black;
+		}
 
-	.topnav a.active {
-  background-color: #ffe19c;
-  color: black;
+		.topnav a.active {
+			background-color: #ffe19c;
+			color: black;
+		} */
 
+		.column {
+			float: left;
+			width: 25%;
+			//padding: 2.5px;
+		}
+
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		.container {
+			position: relative;
+			width: 100%;
+			//max-width: 300px;
+		}
+
+		.image {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		.overlay {
+			position: absolute;
+			bottom: 1;
+			background: #ffe19c;
+			color: #ffe19c;
+			width: 25%;
+			transition: .5s ease;
+			opacity: 0;
+			color: black;
+			font-size: 25px;
+			text-align: center;
+		}
+
+		.container:hover .overlay {
+			opacity: 1;
+		}
 		</style>
 <center>
 <img class = "stock" style="border: 5px solid #E2B347;" src="https://teenlife.s3.amazonaws.com/media/uploads/blogs/5-things-do-high-school-sophomore-prepare-college/5%20things%20to%20do%20sophomore%20year.jpg" alt="center image"></center>
