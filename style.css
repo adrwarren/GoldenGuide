@@ -16,6 +16,12 @@ article{
   height: 100px;
 }
 
+
+.navbar li {
+   display: inline-block;
+   text-align:center; 
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -29,17 +35,14 @@ body {
 	
 
 	.topnav a {
-		float: left;
-		color: black;
+		background-color: #ffe19c;
 		text-align: center;
 		padding: 25px 23px;
 		font-size: 20px;
+		color: black;
 	}
 
-	.topnav a:hover {
-  background-color: white;
-  color: black;
-}
+
 
 	.topnav a.active {
   background-color: white;
@@ -67,3 +70,44 @@ body {
 /* .jimg {
   height: 100 px;
 } idk why but its not working loll*/
+.format {
+  padding: 25px;
+}
+.stock {
+  object-fit: cover;
+  width: 500px;
+  height: 300px;
+}
+	.topnav {
+			overflow: hidden;
+			background-color: #ffe19c;
+		}
+
+		.topnav a {
+			float: left;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			font-size: 18px;
+		}
+
+		.topnav a:hover {
+			background-color: white;
+			color: black;
+		}
+
+		.topnav a.active {
+			background-color: #ffe19c;
+			color: black;
+		}
+
+		.sticky {
+ 			position: fixed;
+  		top: 0;
+ 			width: 100%;
+		}
+
+		.sticky + .content {
+			padding-top: 60px;
+		}
+		

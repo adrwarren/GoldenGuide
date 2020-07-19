@@ -1,69 +1,258 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>The Golden Guide</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>The Golden Guide</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  </head>
+	<script src="script.js">
 
-  <body>
-	<style> 
-			body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-	}
+	</script>
 
-	.topnav {
-		overflow: hidden;
-		background-color: #ffe19c;
-	}
+</head>
 
-	.topnav a {
-		float: left;
-		color: black;
-		text-align: center;
-		padding: 14px 16px;
-		font-size: 18px;
-	}
+<body>
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Playfair Display', serif;
+		}
 
-	.topnav a:hover {
-  background-color: #ffe19c;
-  color: black;
-}
+		/* .topnav {
+			overflow: hidden;
+			background-color: #ffe19c;
+		}
 
-	.topnav a.active {
-  background-color: #ffe19c;
-  color: black;
-}
-		</style>
-		<div class="topnav">
-				<a href="index.html"> <img src="logo1.png" width="25%" height="25%"></a>
-        <center><h1>The Golden Guide</h1>
+		.topnav a {
+			float: left;
+			color: black;
+			text-align: center;
+			padding: 14px 16px;
+			font-size: 18px;
+		}
+
+		.topnav a:hover {
+			background-color: white;
+			color: black;
+		}
+
+		.topnav a.active {
+			background-color: #ffe19c;
+			color: black;
+		} */
+
+		.column {
+			float: left;
+			width: 25%;
+			//padding: 2.5px;
+		}
+
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		.container {
+			position: relative;
+			width: 100%;
+			//max-width: 300px;
+		}
+
+		.image {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+
+		.overlay {
+			position: absolute;
+			bottom: 1;
+			background: #ffe19c;
+			color: #ffe19c;
+			width: 25%;
+			transition: .5s ease;
+			opacity: 0;
+			color: black;
+			font-size: 25px;
+			text-align: center;
+		}
+
+		.container:hover .overlay {
+			opacity: 1;
+		}
+
+		.button {
+			float: center;
+			position: relative;
+			background-color: #ffe19c;
+			width: 10%;
+			margins: auto;
+			padding: 15px 32px;
+			border: black;
+			text-align: center;
+			display: inline-block;
+			color: black;
+			font-size: 16px;
+			transition-duration: 0.4s;
+		}
+
+		.button:hover {
+			background-color: grey;
+			color: white;
+		}
+
+		.footer {
+			display: block;
+			background-color: #ffe19c;
+			//height: 50px ;
+			font-size: 20px;
+			text-align: center;
+			line-height: 55px;
+			min-height: 5vh;
+		}
+	</style>
+	<div class="topnav">
+		
+				 <div id="navbar">
+ <a href="index.html"><img id="logo" src = "logo1.png" alt = "GGLOGO" style="height:140px"></a>
+
+        <a href = "index.html">Home</a>
   			<a href = "freshman.html">Freshmen</a>
   			<a href = "sophomore.html">Sophomores</a>
   			<a href = "junior.html">Juniors</a>
 				<a href = "senior.html">Seniors</a>
+        <a href ="form.html">Volunteering</a>
+        <a href="tutee.html">Find Tutors</a>
+
+				 </div>			
 		</div>
-    
+
+    <div id="google_translate_element"></div>
+<!-- <center><a href="index.html"> <img src="logo1.png" width="25%" height="25%"></a></center> -->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
 
 
 
 
 <!--STARTING THE CONTENT OF HOMEPAGE -->
-    <div >
-      <h1><center>HEY THERE!</center></h1>
-      <h1>HIGH SCHOOL CAN BE TOUGH...</h1>
+      <div class = format><h1><center>HEY THERE!</center></h1>
+      <center><h1>HIGH SCHOOL CAN BE TOUGH...</h1></center>
+      <center><img style="border: 5px solid #E2B347;"src="https://www.excellentresources.com/wp-content/uploads/2017/01/Student-Confused-main-image.jpeg" height:"5000" width:"5000" ></center>
+
+      <center><h1> BUT, LUCKILY YOU'RE IN THE RIGHT PLACE!</h1></center>
+      <center><h2>Welcome to <i>The Golden Guides: High School Edition</i></h2></center>
+      <center><p>Here at <i>The Golden Guides</i> we know education and guidance isn't given equally. It's tough navigating a fundamental part of your future with no one there to guide you. So, we compiled a list of everything we learned from being students just like you. We want to encourage and motivate adolescents to seek opportunities within their local area and also beyond their country. Through the opportunities and resources provided on our website, we will aid students in further continuing their education, while spreading awareness about the inadequate resources provided for students across the country. As we continue to encounter barriers that limit pursuing higher learning, we wish to share our knowledge to help the next generation. </p></center>
+
+      <center><h1>SO LET'S GET STARTED!</h1></center>
+      <h1>Are you a...?</h1>
+      
+    <div class="row"> 
+      <div class="container">
+          <div class="column">
+            <a href = "freshman.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSXsU1uxko6zStHUVYDQAIuUd35MZ_O4CKw4Q&usqp=CAU" alt="Freshman" class = "image" style="width:100%">
+            <div class = "overlay">Freshman</div>
+            </a>
+          </div>
+      </div>
+          
+      
+
+      <div class="container">
+          <div class="column">
+            <a href="sophomore.html">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQVcp-7yDrGP44Oaq0PpDerZOoyXpTabY3hTg&usqp=CAU" alt="Sophomore" class = "image" style="width:100%">
+            <div class = "overlay">Sophomore</div>
+            </a>
+          </div>
+
+      </div>
+
+      <div class="container">
+
+          <div class="column">
+            <a href="junior.html">
+            <img src="https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_man_male_hipster_beard-512.png" alt="Junior" class = "image" style="width:100%">
+            <div class = "overlay">Junior</div>
+            </a>
+          </div>
+
+      </div>
+
+      <div class="container">
+
+          <div class="column">
+            <a href = "senior.html">
+            <img src="https://cdn3.iconfinder.com/data/icons/generic-avatars/128/avatar_portrait_woman_female_blond_1-512.png" alt="Senior" class = "image" style="width:100%">
+            <div class = "overlay">Senior</div>
+            </a>
+          </div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <center><img style="border: 5px solid #E2B347;"src ="https://blogs.worldbank.org/sites/default/files/education/Education/6%20A%20blog.jpg"></center>
+  
+    <h1>Education is not an easy journey.</h1>
+
+    <h2>Education in the Developing Countries</h2>
+    <p>Often times, students who live in a developing country may not often receive proper education or obtain adequate resources for them to further continue their high education. We realize this, and so we wanted to create a website where students are able to receive resources on one site. We intend for the website to be used by high school students, as usually these four years are the most stressful time of their education. But not only that, we know some students may neglect their learning during these crucial years to either work for their family, or succumb an obstacle that limits them from going to school. This website encourages people all over the world to help volunteer students, provide opportunities, and break the language barrier.</p>
+  <center><h3>Are you an International Student?</h3></center>
+
+  <center><h4>Check the following links below:</h4></center>
+  
+  
+  <center><div align="center">
+  <a href="https://www.isepstudyabroad.org/programs/intern-abroad/full-time-internships"class="button">Internships</a>
+  
+  <a href="https://www.volunteerforever.com/article_post/best-volunteer-abroad-programs-organizations-projects/"class="button">Volunteer</a>
+
+  <a href="https://www.affordablecolleges.com/resources/scholarships-for-international-students/" class="button">Scholarships</a>
+
+  <a href="https://www.goabroad.com/articles/highschool-study-abroad/summer-programs-for-high-school-students-abroad"class="button">Summer Courses</a>
+
+  <a href="https://worldscholarshipforum.com/category/competition/"class="button">Competitions</a>
+
+  <a href="https://www.ciee.org/go-abroad/high-school-study-abroad"class="button">Programs</a>
+  </div>
+
+</div></center>
+<br>
+<br>
+<br>
+  <footer class= "footer">
+    <center><p> A BridgeHacks inspired website... </p></center>
+  </footer> </div>
+
+
+
+
+
+
+
       <p>
 
       </p>
 
     </div>
-    
+
+
   </body>
 
 </html>

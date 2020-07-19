@@ -1,0 +1,219 @@
+<html>
+  <head>
+  
+		 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Volunteering</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+			<script src="script.js"> </script>
+
+
+</head>
+<body>
+  <!-- this is the nav bar from the home page -->
+ <div id="navbar">
+ 	<div class="topnav">
+		
+				 <div id="navbar">
+ <a href="index.html"><img id="logo" src = "logo1.png" alt = "GGLOGO" style="height:75.6px"></a>
+
+</div>
+        <a href = "index.html">Home</a>
+  			<a href = "freshman.html">Freshmen</a>
+  			<a href = "sophomore.html">Sophomores</a>
+  			<a href = "junior.html">Juniors</a>
+				<a href = "senior.html">Seniors</a>
+        <a href ="form.html">Volunteering</a>
+        <a href="tutee.html">Find Tutors</a>
+
+			
+		</div>
+    <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
+	<style> 
+			body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+	}
+.topnav {
+		overflow: hidden;
+		background-color: #ffe19c;
+	}
+
+	.topnav a {
+		float: left;
+		color: black;
+		text-align: center;
+		padding: 14px 16px;
+		font-size: 18px;
+	}
+
+	.topnav a:hover {
+  background-color: #ffe19c;
+  color: black;
+}
+
+	.topnav a.active {
+  background-color: #ffe19c;
+  color: black;
+}
+  {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class = "format">
+<h2>Tutor Volunteering Form</h2>
+<h4> VOLUNTEER TODAY! </h2>
+<p>Interested in tutoring high school students from all over the world? Want to fill the education gap from students who may be from low-income families or encourage students to pursue higher education? This is the right place for you to apply! Fill out the form and we will soon contact you for further additional information. </p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Gender</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+          <option value="Prefer not to say">Non-binary</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Time to Tutor">Time to Tutor</label>
+      </div>
+      <div class="col-75">
+        <select id= "Time to Tutor" name="Time to Tutor">
+          <option value ="Morning">Morning</option>
+          <option value="Evening">Evening</option>
+          <option value="Afternoon">Afternoon</option>
+          <option value="Night">Night</option>
+          </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Subjects You Can Tutor On">Subjects You Can Tutor On</label>
+      </div>
+      <div class="col-75">
+        <textarea id="Subjects You Can Tutor On"name="Subjects You Can Tutor On"
+        placeholder="List all subjects, fields, courses, you are knowledgable in."
+        style="height:150px"></textarea>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="Email Address"> Email Address</label>
+            </div><div class="col-75">
+              <textarea id="Email Address"name="Email Address"placeholder="Select an email you check often"
+            style="height: 100px"></textarea>
+            </div>
+        </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Why do you want to be a tutor?">Why do you want to be a tutor?</label>
+      </div><div class="col-75">
+        <textarea id="Why do you want to be a tutor?"name="Why do you want to be a tutor?"
+        placeholder="Experiences,skills,tutoring experiences, background, achievements, etc."
+        style="height:200px"></textarea>
+        </div>
+        </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+</div>
+    </body>
+    </html>
