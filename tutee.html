@@ -18,17 +18,19 @@
 	<div class="topnav">
 		
 				 <div id="navbar">
- <a href="index.html"><img id="logo" src = "logo1.png" alt = "GGLOGO" style="height:75.6px"></a>
+ <a href="index.html"><img id="logo" src = "logo1.png" alt = "GGLOGO" style="height:140px"></a>
 
 </div>
-        <a href = "index.html">Home</a>
+       <div class = "navc">
+        <!-- <a href = "index.html">Home</a> -->
   			<a href = "freshman.html">Freshmen</a>
   			<a href = "sophomore.html">Sophomores</a>
   			<a href = "junior.html">Juniors</a>
 				<a href = "senior.html">Seniors</a>
         <a href ="form.html">Volunteering</a>
         <a href="tutee.html">Find Tutors</a>
-
+        <a href="about.html">About Us</a>
+       </div>
 			
 		</div>
     <div id="google_translate_element"></div>
@@ -141,7 +143,9 @@ input[type=submit]:hover {
   <form action="/action_page.php">
     <div class="row">
       <div class="col-25">
-        <label for="fname">First Name</label>
+        <label for="fname">First Name
+        <!-- <input type= "text" class = "input"> -->
+        </label>
       </div>
       <div class="col-75">
         <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -212,10 +216,13 @@ input[type=submit]:hover {
             <textarea id="Any questions, comments, or concerns?" name="Any questions, comments, or concerns?"
             placeholder="Feel free to contact us at this email thegoldenguide@gmail.com"
             style="height:100px"></textarea>
-    <div class="row">
-      <input type="submit" value="Submit">
-    </div>
+<!-- <div class="row1">
+  <input type="submit" value="Submit">
+</div> -->
   </form>
 </div>
+<div class="row1"><a href="submit.html">
+      <button type="button">Submit</button></a>
+    </div>
 </body>
 </html>

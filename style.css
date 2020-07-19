@@ -110,4 +110,51 @@ body {
 		.sticky + .content {
 			padding-top: 60px;
 		}
-		
+    .row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid #f2f2f2;
+    }
+		.navc {
+      padding-top: 50px;
+    }
+    /* sticky */
+    /* body
+{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display: flex
+}
+.nav .logo{
+    padding: 20px;
+    margin-left: 25px
+}
+.nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 50%;
+    margin-left: auto
+}
+ul li{
+    padding: 20px;
+    list-style: none
+}
+ul li a{
+
+    display: block;
+    text-decoration: none;
+}
+section{
+    height: 100px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%
+} */
